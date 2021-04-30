@@ -1,15 +1,13 @@
-# NanoLooker
+# BananoLooker
 
-![image](https://user-images.githubusercontent.com/19352322/115473119-212dff00-a209-11eb-922c-ba37838318f6.png)
+- Fork of NanoLooker for Banano
 
-## What is Nano ?
+## What is Banano ?
 
-The goal of Nano is to create an efficient cryptocurrency, one that could be used for daily payments, by anyone in the world, without the emissions that come with Bitcoin.
-Nano makes money efficient for a more equal world — simple to pay with, easy to accept and open to all.
+The goal of Banano is to create an efficient cryptocurrency, one that could be used for daily payments, by anyone in the world, without the emissions that come with Bitcoin.
+Banano makes money efficient for a more equal world — simple to pay with, easy to accept and open to all.
 
-- Nano is a fee-less cryptocurrency, making it practical and inclusive for everyone in the world.
-- Without relying on mining, printing or minting, Nano is sustainable digital money.
-- Every Nano is distributed, making it a deflationary currency.
+- Banano is a fee-less cryptocurrency, making it practical and inclusive for everyone in the world.
 - Instant and secure, a transaction is fully confirmed on the network under 1 second.
 
 ## Install
