@@ -33,7 +33,7 @@ GOOGLE_APPLICATION_CREDENTIALS=
 
 - `npm install` - Install dependencies
 - `npm star` - Start the Webserver
-- `npm run start:server` - On another tab, start the NodeJS server
+- `node server/server2.js` - On another tab, start the NodeJS server
 
 ## Languages
 
