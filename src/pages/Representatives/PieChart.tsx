@@ -85,7 +85,7 @@ const Representatives: React.FC<Props> = ({
 
       filteredRepresentatives = filteredRepresentatives.filter(
         ({ alias, weight }) => {
-          const isNanoFoundation = alias?.startsWith("Nano Foundation");
+          const isNanoFoundation = (alias?.startsWith("Official Rep")) || (alias == "Genesis");
           if (isNanoFoundation) {
             accumulatedWeight = new BigNumber(accumulatedWeight)
               .plus(weight)
@@ -101,7 +101,7 @@ const Representatives: React.FC<Props> = ({
         weight: accumulatedWeight,
         isOnline: true,
         isPrincipal: true,
-        alias: "Nano Foundation",
+        alias: "Banano Foundation",
       });
 
       filteredRepresentatives = orderBy(
@@ -245,9 +245,6 @@ const Representatives: React.FC<Props> = ({
         <Row gutter={6}>
           <Col xs={24} md={12}>
             {t("pages.representatives.groupByEntities")}
-            <Tooltip placement="right" title={t("tooltips.groupByEntities")}>
-              <QuestionCircle />
-            </Tooltip>
           </Col>
           <Col xs={24} md={12}>
             <Switch

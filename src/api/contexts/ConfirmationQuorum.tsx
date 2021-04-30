@@ -35,8 +35,13 @@ const Provider: React.FC = ({ children }) => {
   const getConfirmationQuorum = async () => {
     setIsError(false);
     setIsLoading(true);
-    const json = await rpc("confirmation_quorum");
-
+    //const json = await rpc("confirmation_quorum");
+	const res = await fetch("https://api.creeper.banano.cc/confirmation_quorum");
+	const json = await res.json();
+	if (!json.error) {
+		json.principal_representative_min_weight = (json.peers_stake_total_mnano / 1000).toFixed(2);
+	}
+	
     !json || json.error ? setIsError(true) : setConfirmationQuorum(json);
     setIsLoading(false);
   };

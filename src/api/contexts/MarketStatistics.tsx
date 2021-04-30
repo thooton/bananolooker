@@ -88,8 +88,9 @@ const Provider: React.FC = ({ children }) => {
           addQueryPrefix: true,
         },
       );
-      const res = await fetch(`/api/market-statistics${query}`);
+      const res = await fetch(`https://www.nanolooker.com/api/market-statistics${query}`);
       const json = await res.json();
+	  json.currentPrice = json.priceStats.banano.usd;
 
       !json || json.error ? setIsError(true) : setMarketStatistics(json);
     } catch (e) {

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { rawToRai, raiToRaw } from "components/utils";
 import { rpc } from "api/rpc";
 import { KnownAccountsContext } from "./KnownAccounts";
 import { ConfirmationQuorumContext } from "./ConfirmationQuorum";
@@ -48,7 +49,28 @@ const Provider: React.FC = ({ children }) => {
   const getRepresentatives = async () => {
     setIsError(false);
     setIsLoading(true);
-    const json = await rpc("representatives");
+    var json = await rpc("representatives");
+	//var res = await fetch("https://api.creeper.banano.cc/v2/representatives/online");
+	//var json = await res.json();
+	
+	if (!json.error) {
+		var reps = json.representatives;
+		var newreps = [];
+		for (var rep in reps) {
+			if (rawToRai(reps[rep]) < 10000) continue;
+			newreps.push({
+				"account": rep,
+				"weight": rawToRai(reps[rep])
+			});
+		}
+		newreps.sort(function(a, b) {
+			return a.weight < b.weight ? 1 : -1;
+		});
+		json = {
+			"representatives": newreps
+		};
+		console.log(json);
+	}
 
     isEnhancedRepresentativeDone = false;
 
@@ -84,7 +106,6 @@ const Provider: React.FC = ({ children }) => {
         )?.alias,
       })),
     );
-
     setIsLoading(false);
   }, [
     representatives,

@@ -3,7 +3,7 @@ import { rpc } from "api/rpc";
 import { isValidAccountAddress } from "components/utils";
 
 interface Params {
-  count?: string;
+  count?: string | number;
   source?: boolean;
   sorting?: boolean;
   threshold?: string;
@@ -33,7 +33,8 @@ const usePending = (account: string, params: Params): Return => {
   const getPending = async (account: string) => {
     setIsError(false);
     setIsLoading(true);
-
+	var countstr = (params.count as string) || undefined;
+	if (countstr) params.count = parseInt(countstr);
     const json = await rpc("pending", {
       account,
       ...params,

@@ -24,6 +24,7 @@ const Provider: React.FC = ({ children }) => {
   const [isError, setIsError] = React.useState(false);
 
   const getDelegators = async () => {
+	  console.log(delegators);
     if (Object.keys(delegators).length) return;
 
     try {

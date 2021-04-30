@@ -38,8 +38,14 @@ const Provider: React.FC = ({ children }) => {
     setIsError(false);
     setIsLoading(true);
 
-    const res = await fetch("https://www.nanolooker.com/api/node-status");
+    const res = await fetch("https://api.creeper.banano.cc/system_info");
     const json = await res.json();
+	if (!json.error) {
+		json.ledgerSize = json.dbSize;
+		delete json.dbSize;
+		json.nodeStats = json.raiStats;
+		delete json.raiStats;
+	}
 
     !json || json.error ? setIsError(true) : setNodeStatus(json);
     setIsLoading(false);

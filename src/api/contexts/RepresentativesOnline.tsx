@@ -23,8 +23,29 @@ const Provider: React.FC = ({ children }) => {
   const getRepresentativesOnline = async () => {
     setIsError(false);
     setIsLoading(true);
-    const json = await rpc("representatives_online");
-
+    //const json = await rpc("representatives_online");
+	
+	var json;
+	try {
+		var res = await fetch("https://api.creeper.banano.cc/v2/representatives/online");
+		json = await res.json();
+	} catch (e) {
+		json = {
+			"error": e.toString()
+		};
+	}
+	
+	if (!json.error) {
+		var newreps = [];
+		var reps = json.representatives;
+		for (var rep in reps) {
+			newreps.push(rep);
+		}
+		json = {
+			"representatives": newreps
+		};
+	}
+	
     !json || json.error
       ? setIsError(true)
       : setRepresentatives(json.representatives);

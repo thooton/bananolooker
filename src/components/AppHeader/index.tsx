@@ -50,7 +50,7 @@ const AppHeader: React.FC = () => {
             }}
           >
             <Link to="/" style={{ whiteSpace: "nowrap", marginRight: "10px" }}>
-              NanoLooker
+              BananoLooker
             </Link>
           </Col>
           <Col xs={{ span: 24, order: 3 }} md={{ span: 12, order: 2 }}>
@@ -59,6 +59,11 @@ const AppHeader: React.FC = () => {
               selectedKeys={[activeMenu]}
               mode="horizontal"
             >
+			{/*<Menu.Item key="explore">
+                <ApartmentOutlined />
+                {t("menu.explore")}
+                <Link to="/" />
+			</Menu.Item>*/}
               <SubMenu
                 title={
                   <span onClick={() => history.push("/")}>
@@ -66,12 +71,11 @@ const AppHeader: React.FC = () => {
                     {t("menu.explore")}
                   </span>
                 }
-              >
-                <Menu.Item key="representatives">
+              ><Menu.Item key="representatives">
                   {t("menu.representatives")}
                   <Link to="/representatives" />
                 </Menu.Item>
-                <Menu.Item key="developer-fund">
+                {/*<Menu.Item key="developer-fund">
                   {t("menu.developerFund")}
                   <Link to="/developer-fund" />
                 </Menu.Item>
@@ -90,13 +94,13 @@ const AppHeader: React.FC = () => {
                 <Menu.Item key="exchange-tracker">
                   {t("menu.exchangeTracker")}
                   <Link to="/exchange-tracker" />
-                </Menu.Item>
+                </Menu.Item>*/}
                 <Menu.Item key="faucets">
                   {t("menu.faucets")}
                   <Link to="/faucets" />
-                </Menu.Item>
+				</Menu.Item>
               </SubMenu>
-              <Menu.Item key="news">
+              {/*<Menu.Item key="news">
                 <CalendarOutlined />
                 {t("menu.news")}
                 <Link to="/news" />
@@ -117,7 +121,12 @@ const AppHeader: React.FC = () => {
                   {t("menu.networkStatus")}
                   <Link to="/network-status" />
                 </Menu.Item>
-              </SubMenu>
+              </SubMenu>*/}
+			  <Menu.Item key="menu-status">
+                <DatabaseOutlined />
+                {t("menu.status")}
+                <Link to="/node-status" />
+              </Menu.Item>
             </Menu>
           </Col>
 

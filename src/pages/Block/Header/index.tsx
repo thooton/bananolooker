@@ -29,9 +29,9 @@ const BlockHeader: React.FC = () => {
         </div>
         <span className="break-word" style={{ marginRight: "6px" }}>
           <span>{block.substr(block.length * -1, block.length - 64)}</span>
-          <span style={{ color: "#1890ff" }}>{block.substr(-64, 7)}</span>
+          <span style={{ color: "rgb(255, 193, 37)" }}>{block.substr(-64, 7)}</span>
           <span>{block.substr(-57, 50)}</span>
-          <span style={{ color: "#1890ff" }}>{block.substr(-7)}</span>
+          <span style={{ color: "rgb(255, 193, 37)" }}>{block.substr(-7)}</span>
         </span>
         <div
           style={{

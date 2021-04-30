@@ -27,7 +27,7 @@ import Banner from "./Banner";
 import RecentTransactions from "./RecentTransactions";
 
 const HomePage = () => {
-  const { t } = useTranslation();
+	{/*const { t } = useTranslation();
   const isSmallAndLower = !useMediaQuery("(min-width: 576px)");
   const { fiat } = React.useContext(PreferencesContext);
   const {
@@ -109,12 +109,12 @@ const HomePage = () => {
       .dividedBy(totalConfirmations48hAgo)
       .times(100)
       .toNumber();
-  }
+	}*/}
 
   return (
     <>
       <Banner />
-      <Row gutter={[{ xs: 6, sm: 12 }, 12]}>
+      {/*<Row gutter={[{ xs: 6, sm: 12 }, 12]}>
         <Col
           xs={{ span: 24, order: 3 }}
           md={{ span: 12, order: 1 }}
@@ -281,7 +281,7 @@ const HomePage = () => {
           </Card>
         </Col>
       </Row>
-      <RecentTransactions />
+      <RecentTransactions />*/}
     </>
   );
 };

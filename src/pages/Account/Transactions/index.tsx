@@ -201,7 +201,7 @@ const TransactionsTable = ({
                           {amount
                             ? `${new BigNumber(
                                 rawToRai(amount),
-                              ).toFormat()} NANO`
+                              ).toFormat()} BAN`
                             : ""}
                         </Text>
                       </Col>

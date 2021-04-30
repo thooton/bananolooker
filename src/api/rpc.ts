@@ -13,7 +13,7 @@ export const rpc = async (action: string, params?: any) => {
   let json;
 
   try {
-    res = await fetch(`/api/rpc`, {
+    res = await fetch(`https://kaliumapi.appditto.com/api`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -40,3 +40,7 @@ export const rpc = async (action: string, params?: any) => {
 
   return json;
 };
+
+function processRepresentatives() {
+	
+}

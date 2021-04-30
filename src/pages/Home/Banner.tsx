@@ -27,7 +27,7 @@ const Banner: React.FC = () => {
         alignItems: "center",
         flexDirection: "column",
         margin: "-12px -12px 12px -12px",
-        backgroundColor: theme === Theme.DARK ? "#121212" : "#4A90E2",
+        backgroundColor: theme === Theme.DARK ? "#121212" : "#ffd34f",
         padding: "40px 0",
       }}
     >
@@ -35,8 +35,8 @@ const Banner: React.FC = () => {
         style={{ display: "flex", alignItems: "center", marginBottom: "18px" }}
       >
         <img
-          alt="Nano block-lattice explorer"
-          height="20px"
+          alt="Banano block-lattice explorer"
+          height="30px"
           src={`/nano-${theme === Theme.DARK ? "dark" : "light"}.png`}
           style={{ marginRight: "12px" }}
         />
@@ -59,7 +59,7 @@ const Banner: React.FC = () => {
         <Search isHome />
       </div>
 
-      <Space>
+      {/*<Space>
         <Link to={"/what-is-nano"}>
           <Button ghost>{t("menu.whatIsNano")}</Button>
         </Link>
@@ -85,7 +85,7 @@ const Banner: React.FC = () => {
           {[Fiat.CNY, Fiat.JPY].includes(fiat) ? <PayCircleOutlined /> : null}
           {t("menu.earnNano")}
         </Button>
-      </Space>
+</Space>*/}
     </div>
   );
 };

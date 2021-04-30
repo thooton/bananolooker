@@ -33,8 +33,8 @@
     "ok": "D'accord"
   },
   "nodeHealth": {
-    "nodeReloading": "Le nœud Nano est en cours de rechargement",
-    "nodeReady": "Le nœud Nano est prêt"
+    "nodeReloading": "Le nœud Banano est en cours de rechargement",
+    "nodeReady": "Le nœud Banano est prêt"
   },
   "transaction": {
     "type": "Type",
@@ -51,22 +51,22 @@
   },
   "tooltips": {
     "avgConfirmationTime": "Le temps moyen de confirmation est calculé localement sur le nœud. Si le nœud est redémarré ou dans un état dégradé, le temps de confirmation moyen peut être supérieur à celui du reste du réseau.",
-    "circulatingSupply": "La quantité de pièces en circulation. Nano est entièrement distribué, l'offre n'augmentera jamais.",
-    "nanoTransactionFees": "Contrairement à toutes les autres crypto-monnaies, les transactions Nano sont sans frais, pour toujours.",
-    "bitcoinTransactionFees": "Cette valeur n'a aucun impact sur le réseau NANO, c'est uniquement à des fins de comparaison. Il représente la somme des frais de transaction que les utilisateurs de Bitcoin paient aux mineurs pour que leur transaction soit acceptée sur le réseau Bitcoin.",
-    "cps": "Confirmations par seconde. Le taux de blocs confirmés (envoi ou réception) sur le réseau NANO. Il est échantillonné au cours de la dernière minute localement sur le nœud. Si le nœud est redémarré ou dans un état dégradé, la valeur CPS peut être supérieure ou inférieure à la moyenne réelle sur le réseau pendant que le nœud se synchronise et se reconnecte avec les autres nœuds.",
-    "votingWeight": "Un compte avec un minimum de {{minWeight}} NANO ou >= 0,1% du poids de vote en ligne qui lui est délégué est requis pour obtenir le statut de représentant principal. Lorsqu'ils sont configurés sur un nœud qui vote, les votes qu'il produit seront rediffusés par d'autres nœuds vers qui les reçoivent, ce qui permet au réseau d'atteindre un consensus plus rapidement.",
+    "circulatingSupply": "La quantité de pièces en circulation. Banano est entièrement distribué, l'offre n'augmentera jamais.",
+    "nanoTransactionFees": "Contrairement à toutes les autres crypto-monnaies, les transactions Banano sont sans frais, pour toujours.",
+    "bitcoinTransactionFees": "Cette valeur n'a aucun impact sur le réseau BAN, c'est uniquement à des fins de comparaison. Il représente la somme des frais de transaction que les utilisateurs de Bitcoin paient aux mineurs pour que leur transaction soit acceptée sur le réseau Bitcoin.",
+    "cps": "Confirmations par seconde. Le taux de blocs confirmés (envoi ou réception) sur le réseau BAN. Il est échantillonné au cours de la dernière minute localement sur le nœud. Si le nœud est redémarré ou dans un état dégradé, la valeur CPS peut être supérieure ou inférieure à la moyenne réelle sur le réseau pendant que le nœud se synchronise et se reconnecte avec les autres nœuds.",
+    "votingWeight": "Un compte avec un minimum de {{minWeight}} BAN ou >= 0,1% du poids de vote en ligne qui lui est délégué est requis pour obtenir le statut de représentant principal. Lorsqu'ils sont configurés sur un nœud qui vote, les votes qu'il produit seront rediffusés par d'autres nœuds vers qui les reçoivent, ce qui permet au réseau d'atteindre un consensus plus rapidement.",
     "pending": "Un état de transaction où un bloc d'envoi de fonds a été publié et confirmé par le réseau, mais un bloc correspondant recevant ces fonds n'a pas encore été envoyé ou confirmé.",
-    "nakamotoCoefficient": "Le coefficient de Nakamoto est un moyen de quantifier la décentralisation d'une blockchain ou d'un autre système décentralisé. C'est le nombre d'entités dont vous avez besoin pour compromettre au moins un sous-système essentiel. Pour Nano, plus de 50% du poids des voix des principaux représentants devrait être compromis.",
-    "representatives": "Pour optimiser les performances, seuls les comptes avec un poids de vote >= 1000 NANO sont considérés mais normalement tout compte avec un poids de vote> 0, mais <0,1% du poids de vote en ligne.",
-    "principalRepresentatives": "Un compte avec un minimum de {{principalRepresentativeMinWeight}} NANO ou >= 0,1% du poids de vote en ligne qui lui est délégué est requis pour obtenir le statut de représentant principal. Lorsqu'ils sont configurés sur un nœud qui vote, les votes qu'il produit seront rediffusés par d'autres nœuds à qui les reçoivent, aidant le réseau à atteindre un consensus plus rapidement.",
+    "nakamotoCoefficient": "Le coefficient de Nakamoto est un moyen de quantifier la décentralisation d'une blockchain ou d'un autre système décentralisé. C'est le nombre d'entités dont vous avez besoin pour compromettre au moins un sous-système essentiel. Pour Banano, plus de 50% du poids des voix des principaux représentants devrait être compromis.",
+    "representatives": "Pour optimiser les performances, seuls les comptes avec un poids de vote >= 10000 BAN sont considérés mais normalement tout compte avec un poids de vote> 0, mais <0,1% du poids de vote en ligne.",
+    "principalRepresentatives": "Un compte avec un minimum de {{principalRepresentativeMinWeight}} BAN ou >= 0,1% du poids de vote en ligne qui lui est délégué est requis pour obtenir le statut de représentant principal. Lorsqu'ils sont configurés sur un nœud qui vote, les votes qu'il produit seront rediffusés par d'autres nœuds à qui les reçoivent, aidant le réseau à atteindre un consensus plus rapidement.",
     "onlinePrincipalRepresentatives": "Comptes de représentants en ligne qui ont voté récemment.",
     "lastTransaction": "Dernière transaction d'envoi depuis l'un des {{totalAccounts}} comptes.",
-    "largeTransactions": "Uniquement les transactions d'envoi de 10,000 NANO ou plus sont temporairement sauvegardées pendant une semaine.",
-    "knownExchangeBalance": "Exclure {{knownExchangeList}} du diagramme de distribution. Ces comptes combinés contiennent {{knownExchangeBalance}} NANO",
-    "unchecked": "Blocs (transactions) qui ont été téléchargés mais pas encore traités par le nœud Nano. Le logiciel de nœud télécharge tous les bocks des autres nœuds comme non vérifiés, les traite et les ajoute au nombre de blocs, confirme les blocs de frontière pour chaque compte, puis les marque comme cimentés.",
+    "largeTransactions": "Uniquement les transactions d'envoi de 10,000 BAN ou plus sont temporairement sauvegardées pendant une semaine.",
+    "knownExchangeBalance": "Exclure {{knownExchangeList}} du diagramme de distribution. Ces comptes combinés contiennent {{knownExchangeBalance}} BAN",
+    "unchecked": "Blocs (transactions) qui ont été téléchargés mais pas encore traités par le nœud Banano. Le logiciel de nœud télécharge tous les bocks des autres nœuds comme non vérifiés, les traite et les ajoute au nombre de blocs, confirme les blocs de frontière pour chaque compte, puis les marque comme cimentés.",
     "cemented": "Lorsqu'un nœud spécifique marque une transaction confirmée comme irréversible localement en définissant la hauteur de confirmation du compte (dans la base de données des nœuds) sur la hauteur de bloc désormais plus élevée de la transaction confirmée. Le cimentage est une opération au niveau du nœud.",
-    "unknownLastTransaction": "Les dates de transaction ont été introduites en février 2019. Avant cette date, les heures de transaction n'étaient pas enregistrées localement sur les nœuds. La raison pour laquelle la date de la dernière transaction est inconnue est qu'elle a été confirmée avant l'enregistrement des dates ou avant la mise en service du nœud NanoLooker.",
+    "unknownLastTransaction": "Les dates de transaction ont été introduites en février 2019. Avant cette date, les heures de transaction n'étaient pas enregistrées localement sur les nœuds. La raison pour laquelle la date de la dernière transaction est inconnue est qu'elle a été confirmée avant l'enregistrement des dates ou avant la mise en service du nœud BananoLooker.",
     "confirmationHeight": "Nombre stocké dans la base de données des nœuds locaux qui représente le bloc confirmé le plus élevé (le plus récent) d'une chaîne de comptes. Lié à (mais différent de) la hauteur du bloc.",
     "blockHeight": "Valeur entière locale qui représente l'ordre d'un bloc dans une chaîne de comptes. Par exemple, le 15e bloc d'un compte aurait une hauteur de bloc de 15. Lié à (mais différent de) la hauteur de confirmation.",
     "bookmarks": "Les {{type, capitalize}} favoris sont enregistrés sur votre appareil. Vous pouvez gérer vos {{type}} connus en leur donnant des alias."
@@ -80,17 +80,17 @@
     "darkMode": "Mode de nuit",
     "darkModeDetailed": "Passez du mode Clair ou Foncé pour améliorer l'expérience de navigation de votre site en fonction de votre environnement.",
     "language": "Langue",
-    "languageDetailed": "Choisissez la langue souhaitée. NanoLooker recherche des contributeurs pour aider à améliorer la traduction de l'explorateur. <0>Contribuer</0>",
+    "languageDetailed": "Choisissez la langue souhaitée. BananoLooker recherche des contributeurs pour aider à améliorer la traduction de l'explorateur. <0>Contribuer</0>",
     "watch": "Surveiller d'autres cryptomonnaies",
     "watchSearch": "Rechercher des crypto-monnaies",
     "watchDetailed": "Surveillez le prix des autres crypto-monnaies dans le top 100. Les prix actuels du marché et le changement sur 24 heures apparaîtront dans la barre supérieure. Vous pouvez également réorganiser votre sélection par glisser-déposer.",
     "fiatCurrency": "Monnaie fiduciaire",
-    "fiatCurrencyDetailed": "L'argent fiduciaire est une monnaie émise par le gouvernement. Sélectionnez une monnaie fiduciaire pour comparer le prix de Nano.",
+    "fiatCurrencyDetailed": "L'argent fiduciaire est une monnaie émise par le gouvernement. Sélectionnez une monnaie fiduciaire pour comparer le prix de Banano.",
     "natricons": "Natricons",
-    "natriconsDetailed": "Les Natricons sont un visage amical et familier pour les adresses Nano. Utilisez-les sur les pages de compte, partout où il y a une adresse Nano à proximité.",
+    "natriconsDetailed": "Les Natricons sont un visage amical et familier pour les adresses Banano. Utilisez-les sur les pages de compte, partout où il y a une adresse Nano à proximité.",
     "liveTransactions": "Activer les mises à jour en direct",
-    "liveTransactionsDetailed": "Regardez les transactions en direct se déroulant sur le réseau Nano. Disponible sur la page d'accueil.",
-    "filterTransactions": "Inclure les montants inférieurs à 1 NANO",
+    "liveTransactionsDetailed": "Regardez les transactions en direct se déroulant sur le réseau Banano. Disponible sur la page d'accueil.",
+    "filterTransactions": "Inclure les montants inférieurs à 1 BAN",
     "filterTransactionsDetailed": "Incluez les petits montants à afficher dans le flux de transactions en direct sur la page d'accueil.",
     "contribute": "Contribuer"
   },
@@ -105,8 +105,8 @@
     "faucets": "Robitets (Faucets)",
     "news": "Nouvelles",
     "nodeStatus": "Status du nœud",
-    "whatIsNano": "Qu'est-ce que Nano ?",
-    "earnNano": "Gagner des Nano",
+    "whatIsNano": "Qu'est-ce que Banano ?",
+    "earnNano": "Gagner des Banano",
     "preferences": "Préférences",
     "status": "Statut",
     "networkStatus": "L'état du réseau"
@@ -115,7 +115,7 @@
     "createdBy": "Créé par {{creator}}",
     "donations": {
       "donate": "Faire un don",
-      "title": "Compte de don NanoLooker"
+      "title": "Compte de don BananoLooker"
     }
   },
   "pages": {
@@ -125,22 +125,22 @@
       "market": "Marchés",
       "marketCapRank": "Classement de la capitalisation",
       "marketCap": "Capitalisation du marché",
-      "circulatingSupply": "NANO en circulation",
+      "circulatingSupply": "BAN en circulation",
       "latestBlock": "Dernier bloc",
       "principalRepOnline": "Représentants principaux en ligne",
       "ledgerSize": "Taille du grand livre",
       "last24Hours": "Dernières 24 heures",
       "avgConfirmationTime": "Temps de confirmation moyen (secondes)",
       "confirmedTransactions": "Transactions confirmés",
-      "nanoTransactionFees": "Frais de transaction NANO",
+      "nanoTransactionFees": "Frais de transaction BAN",
       "exchangeVolume": "Volume des échanges",
-      "onChainVolume": "Volume sur la chaîne NANO",
+      "onChainVolume": "Volume sur la chaîne BAN",
       "bitcoinTransactionFees": "Frais de transaction Bitcoin payés aux mineurs",
       "recentTransactions": "Transactions récentes",
       "liveUpdatesDisabled": "Mises à jour en direct désactivées",
       "waitingForTransactions": "En attente de nouvelles transactions",
-      "connectingToBlockchain": "Connexion à la blockchain NANO",
-      "reconnectingToBlockchain": "Déconnecté, reconnection en cours à la blockchain NANO"
+      "connectingToBlockchain": "Connexion à la blockchain BAN",
+      "reconnectingToBlockchain": "Déconnecté, reconnection en cours à la blockchain BAN"
     },
     "account": {
       "votingWeight": "Poids du vote",
@@ -153,7 +153,7 @@
       "loadMoreTransactions": "Voir plus de transactions",
       "viewTransactions": "Voir les transactions",
       "notOpenedYet": "Ce compte n'a pas encore été ouvert",
-      "notOpenedYetReason": "Bien que l'adresse du compte soit valide, aucun bloc n'a encore été publié dans sa chaîne. Si NANO a été envoyé sur ce compte, il doit encore publier un bloc correspondant pour empocher les fonds.",
+      "notOpenedYetReason": "Bien que l'adresse du compte soit valide, aucun bloc n'a encore été publié dans sa chaîne. Si BAN a été envoyé sur ce compte, il doit encore publier un bloc correspondant pour empocher les fonds.",
       "missingAccount": "Compte manquant",
       "missingAccountInfo": "Le compte n'est pas spécifié dans l'URL. Utilisez la barre de recherche supérieure pour rechercher un compte ou ajoutez-le dans l'URL après /account/"
     },
@@ -172,7 +172,7 @@
       "missingBlock": "Bloc manquant",
       "missingBlockInfo": "Le bloc n'est pas spécifié dans l'URL. Utilisez la barre de recherche supérieure pour rechercher un bloc ou ajoutez-le dans l'URL après /block/",
       "blockNotFound": "Bloc non trouvé",
-      "blockNotFoundInfo": "Le bloc que vous avez demandé est introuvable. Il est possible que le bloc soit présent sur le réseau Nano mais n'ait pas encore été vu par le nœud. Assurez-vous que vous recherchez le bon bloc ou réessayez plus tard."
+      "blockNotFoundInfo": "Le bloc que vous avez demandé est introuvable. Il est possible que le bloc soit présent sur le réseau Banano mais n'ait pas encore été vu par le nœud. Assurez-vous que vous recherchez le bon bloc ou réessayez plus tard."
     },
     "representatives": {
       "voteDistribution": "Répartition des votes",
@@ -187,6 +187,7 @@
       "totalOnlineStake": "Mise totale en ligne",
       "totalPeerStake": "Participation totale des pairs",
       "includeOfflineRepresentatives": "Inclure les représentants hors-ligne",
+      "groupByEntities": "Regrouper les entités de la Foundation Banano",
       "viewDelegators": "Voir {{count}} délégants",
       "loadAllRepresentatives": "Charger tous les représentants"
     },
@@ -195,39 +196,39 @@
       "noDelegatorsFound": "Aucun délégant trouvé"
     },
     "faucets": {
-      "description": "Les robitets (Faucets) vous permet de réclamer gratuitement de petites quantités de NANO. Ces robinets vous permettent de découvrir à quel point il est facile d'envoyer et de recevoir des NANO à travers le monde instantanément sur un réseau décentralisé."
+      "description": "Les robitets (Faucets) vous permet de réclamer gratuitement de petites quantités de BAN. Ces robinets vous permettent de découvrir à quel point il est facile d'envoyer et de recevoir des BAN à travers le monde instantanément sur un réseau décentralisé."
     },
     "developerFund": {
       "description": "À partir du 25/11/19, le fonds de développement a été divisé en {{totalAccounts}} comptes suite à un examen de la politique de sécurité interne et des poids de vote représentatifs.",
       "lastTransaction": "Dernière transaction",
       "allTransactions": "Afficher toutes les transactions d'envoi",
       "originalDeveloperFund": "Fonds d'origine pour les développeurs",
-      "originalDeveloperFundDescription": "La distribution de Nano (anciennement RaiBlocks) a été effectuée en résolvant les captchas manuels à partir de fin 2015 et se terminant en octobre 2017. La distribution s'est arrêtée après ~ 39% du montant de <0>Genèse</0> a été distribué et le reste de l'approvisionnement a été <1>brûlé</1>.",
+      "originalDeveloperFundDescription": "La distribution de Banano (anciennement RaiBlocks) a été effectuée en résolvant les captchas manuels à partir de fin 2015 et se terminant en octobre 2017. La distribution s'est arrêtée après ~ 39% du montant de <0>Genèse</0> a été distribué et le reste de l'approvisionnement a été <1>brûlé</1>.",
       "totalAccounts": "{{totalAccounts}} Comptes au total",
-      "percentOfTotal": "{{percent}}% des NANO en circulation"
+      "percentOfTotal": "{{percent}}% des BAN en circulation"
     },
     "knownAccounts": {
       "totalAccounts": "{{totalAccounts}} Comptes connus"
     },
     "largeTransactions": {
-      "description": "Transactions volumineuses se déroulant sur la blockchain NANO.",
+      "description": "Transactions volumineuses se déroulant sur la blockchain BAN.",
       "latest": "Dernière transaction",
       "largest": "Montant le plus élevé"
     },
     "distribution": {
-      "title": "Distribution de NANO",
+      "title": "Distribution de BAN",
       "executionDate": "La dernière compilation de distribution était le <0>{{date}}</0>",
-      "summary": "Un total de <0>{{i18nTotalAccounts}}</0> comptes détiennent <1>{{i18nTotalBalances}}</1> NANO",
+      "summary": "Un total de <0>{{i18nTotalAccounts}}</0> comptes détiennent <1>{{i18nTotalBalances}}</1> BAN",
       "summaryMinBalance": "Tout compte dont le solde est inférieur à <0>0,001</0> est exclu",
       "includeKnownExchanges": "Inclure les échanges connus",
       "logScale": "Échelle logarithmique",
       "dormantFunds": "Fonds dormants",
-      "dormantFundsExperiment": "Il s'agit d'une expérience pour comprendre combien de comptes sont actifs sur la blockchain Nano. Pour chacun des {{totalAccounts}} comptes, la date de la dernière transaction sur le nœud local est capturée. Le solde et les montants en attente que contient chaque compte sont marqués comme actifs pour le mois de leur dernière transaction. Le mois suivant, le solde et en attente sera marqué comme dormant.",
-      "availableSupply": "Somme des Nano disponibles",
+      "dormantFundsExperiment": "Il s'agit d'une expérience pour comprendre combien de comptes sont actifs sur la blockchain Banano. Pour chacun des {{totalAccounts}} comptes, la date de la dernière transaction sur le nœud local est capturée. Le solde et les montants en attente que contient chaque compte sont marqués comme actifs pour le mois de leur dernière transaction. Le mois suivant, le solde et en attente sera marqué comme dormant.",
+      "availableSupply": "Somme des Banano disponibles",
       "knownAccountBalances": "Soldes de compte connus",
       "unknownDormantFunds": "Fonds dormants inconnus",
-      "dormantFundsQuarterExample": "Un compte qui détient 50 NANO et 50 NANO en attente ont effectué la dernière transaction il y a 6 mois (2 trimestres), un solde de 100 NANO est ajouté comme «dormant» au total du trimestre suivant.",
-      "dormantNano": "NANO dormant",
+      "dormantFundsQuarterExample": "Un compte qui détient 50 BAN et 50 BAN en attente ont effectué la dernière transaction il y a 6 mois (2 trimestres), un solde de 100 NANO est ajouté comme «dormant» au total du trimestre suivant.",
+      "dormantNano": "BAN dormant",
       "ofAvailableSupply": "de l'offre disponible"
     },
     "news": {
@@ -242,7 +243,7 @@
       "cemented": "Cimenté",
       "ledger": "Registre",
       "availableSupply": "Approvisionnement disponible",
-      "nanoAccounts": "Comptes NANO",
+      "nanoAccounts": "Comptes BAN",
       "ledgerSize": "Taille du grand livre",
       "activeDifficulty": "Difficulté active",
       "networkMinimum": "Difficulté minimum du réseau",
@@ -265,7 +266,7 @@
       "noMonitorFound": "Aucun moniteur trouvé"
     },
     "exchangeTracker": {
-      "description": "Chaque jour, une capture du solde des comptes des plateformes d'échanges les plus populaires où Nano est négocié est pris. Cette mesure peut permettre d'analyser les mouvements et fluctuations sur le réseau."
+      "description": "Chaque jour, une capture du solde des comptes des plateformes d'échanges les plus populaires où Banano est négocié est pris. Cette mesure peut permettre d'analyser les mouvements et fluctuations sur le réseau."
     },
     "preferences": {
       "description": "Gérez vos préférences pour chaque section. Les préférences sont stockées sur le navigateur, si vous effacez vos données, vos préférences seront rétablies par défaut.",

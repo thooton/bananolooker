@@ -24,7 +24,7 @@ export interface AccountHistory {
 }
 
 interface AccountHistoryParams {
-  count?: string;
+  count?: string | number;
   raw?: boolean;
   head?: string;
   offset?: number;
@@ -58,7 +58,8 @@ const useAccountHistory = (
   ) => {
     setIsError(false);
     setIsLoading(true);
-
+	var countstr = (params.count as string) || undefined;
+	if (countstr) params.count = parseInt(countstr);
     const json = await rpc("account_history", {
       account,
       ...params,
